@@ -1,0 +1,20 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<button > cLick</button>
+<p>Hello world </p>
+<script>
+   $("button").click(function(){
+  // alert()
+  $("P").css("background","grey")
+  $("P").css("font-size","40px")
+  $("P").css("border","solid")
+  $("P").width(200).height(200)
+  //$("p").text("<b>hello</b>")
+  $("p").html("<b> hello </b>")
+  $("P").animate({"margin-left":"200px",
+    "border-radius":"20px",
+    "transform":"rotate(20deg)"
+  },2000)
+
+   });
+</script>

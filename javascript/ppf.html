@@ -1,0 +1,21 @@
+<script>
+    function ppfCalculator(amount,duration,roi)
+    {
+console.log("function call");
+console.log(amount,duration,roi);
+
+var openingBalance=0;
+for(var i=1;i<=duration;i++)
+{
+    var interest=(openingBalance+amount)*roi/100;
+    interest=Math.round(interest);
+    var closeingBalance=openingBalance+amount+interest;
+    console.log(i,openingBalance,amount,interest,closeingBalance);
+    document.write(`<li>${i} &nbsp; ${openingBalance} &nbsp; ${amount} &nbsp; ${interest} &nbsp; ${closeingBalance}</li>`)
+    openingBalance=closeingBalance;
+}
+    }
+    ppfCalculator(150000,15,7.1);
+
+</script>
+

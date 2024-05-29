@@ -1,0 +1,25 @@
+<script>
+    function emi(P,N,R)
+    {
+        N=N*12;
+       // R=R/12/100;
+      R=0.006;
+      var emi= P * R * ( 1 +R)**N /((1+R)**N-1);
+for(var i=1;i<=30;i++)
+{
+      
+      
+        //P x R x (1+R)^N / [(1+R)^N-1] 
+        var emi= P * R * ( 1 +R)**N /((1+R)**N-1);
+        emi=Math.round(emi);
+        console.log(emi);
+        //const interest = (amount * (rate * 0.01)) / months;
+    //total = ((amount/months) + interest);
+        var interest=(P*(R*0.01))/N
+        var closeingBalance =((p/N)+interest);
+        console.log( i,  P, N,  emi,   closeingBalance);
+    }
+}
+    emi(2500000,30,8.75);
+
+</script>

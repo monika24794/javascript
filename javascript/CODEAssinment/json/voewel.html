@@ -1,0 +1,20 @@
+
+<script>
+function getVowels(string) {
+    let Vowels = "aAeEiIoOuU";
+    let vowelsCount = 0,consonst=0;
+    for (let i = 0; i < string.length; i++)
+     {
+        if (Vowels.indexOf(string[i]) !== -1) 
+        {
+            vowelsCount += 1;
+        }
+        else{
+            consonst +=1;
+        }
+    }
+    console.log(vowelsCount)
+    console.log(consonst)
+}
+getVowels("hello world");
+</script>

@@ -1,0 +1,30 @@
+<html>
+    <head>dome</head>
+    <body style="border: solid;">
+        <p id="x1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab id unde,
+            ea sapiente rem nulla sint distinctio consequatur debitis voluptate
+            iste quia aspernatur praesentium. Numquam iusto fuga quisquam
+            aspernatur laborum.</p>
+        <button onclick="f1()">
+            submit
+        </button>
+        <script>
+          function f1()
+            {
+                //console.log(document)
+                //console.log(typeof document)
+                //console.log(typeof document.body);
+               // console.log(document.body);
+               //document.body.style.backgroundColor ="#cfc"//style manupulation
+              // console.log(document.getElementById("x1"));
+              //document.getElementById("x1").style.backgroundColor="cfc";//style manupulation
+
+             // document.getElementById("x1").innerText="hello";
+              //document.getElementById("x1").innerText="<i>hello</i>";//it nopt allowed to html tagwith dom
+              //document.getElementById("x1").innerHTML="<i>hello</i>";
+              document.getElementById("x1").remove();
+
+            };
+        </script>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<p class ="x1"></p>
+<input type="text" class="x2">
+<button onclick="f1()">Enter</button>
+<p class="x3"></p>
+<script>
+var num1=Math.round(Math.random()*10) ;
+var num2=Math.round(Math.random()*10) ;
+console.log(num1)
+console.log(num2)
+var sum=num1+num2;
+console.log(sum)
+document.querySelector(".x1").innerHTML=(`enter ${num1}+${num2}`)
+function f1(){
+    var record=document.querySelector(".x2").value
+    console.log(record)
+    //(condition)? (true):(false)
+    var massage=(record == sum) ? "valid":"invalid";
+    console.log(massage)
+    document.querySelector(".x3").innerText=(massage)
+}
+</script>

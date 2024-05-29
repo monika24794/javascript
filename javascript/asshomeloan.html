@@ -1,0 +1,33 @@
+<script>
+function emi(p,n,r)
+    {
+        
+        n=n*12;
+        var r=(r/12)/100;
+        //var emi= P * R * ( 1 +R)**N /((1+R)**N-1);
+        
+// for(var i=1;i<=30;i++)
+//  {     
+    var emi = p * r * ( 1 + r)**n /((1+r)**n-1);
+        emi=Math.round(emi);
+    var interest= p *( r*12/100);
+   // interest=(interest);
+    var pripay = emi-interest;
+    pripay=Math.round(pripay);
+       p = p- pripay;
+       //p=Math.round(p);
+      console.log(1,emi,pripay,interest,p);
+ //}
+   
+}    
+emi(2500000,30,8.75);
+</script>
+<!-- interest_paid_yearly = opening_balance * (interest_rate / 100)
+principal_paid_yearly = emi_per_month * 12 - interest_paid_yearly
+closing_balance = opening_balance - principal_paid_yearly
+closing_balance_list.append(closing_balance)
+opening_balance = closing_balance
+
+interest=opening_balance*(r/100)
+p=emi-interest
+     -->

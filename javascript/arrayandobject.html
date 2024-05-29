@@ -1,0 +1,48 @@
+<script>
+    var product=[
+        {
+        "name":"Raga Women's Charm: Elegant Mother of Pearl Dial with Ornate Strap Watch",
+        "price":1000,
+        "path":"https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Sites-titan-master-catalog/default/dw5487e70b/images/Titan/Catalog/2606WM08_1.jpg?sw=800&sh=800",
+        "size":["xs","s","m","l","xl","xxl"]
+        },
+        {
+        "name":"Raga Women's Charm: Elegant Mother of Pearl Dial with Ornate Strap Watch",
+        "price":9000,
+        "path":"https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Sites-titan-master-catalog/default/dw77995370/images/Titan/Catalog/2608QM02_1.jpg?sw=800&sh=800",
+        "size":["xs","s","m","l","xl","xxl"]
+        },
+        {
+        "name":"Raga Women's Charm: Elegant Mother of Pearl Dial with Ornate Strap Watch",
+        "price":8000,
+        "path":"https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Sites-titan-master-catalog/default/dwf87788bb/images/Titan/Catalog/2656WL01_1.jpg?sw=360&sh=360",
+        "size":["xs","s","m","l","xl","xxl"]
+        },
+    ]
+    var i=0;
+    while(i<product.length)
+    {
+        console.log(i, product[i])
+     document.write(
+    `<div>
+      <img src="${product[i].path}" alt>
+      <h2>${product[i].price}</h2>
+      <p>${product[i].name}</p>
+      <p>${product[i].size}</p>
+      <button> add tocart </button>
+   </div>`)
+   i++;
+    }
+    
+    console.log(products)
+</script>
+<style>
+    div{
+        border: solid;
+        width: 25%;
+        float: left;
+    }
+    img{
+        width: 100%;
+    }
+</style>

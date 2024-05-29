@@ -1,0 +1,39 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<button id="b1" > open model box </button>
+<div class="blackbox"></div>
+<div class="modelbox"></div>
+<style>
+body{
+    height: 1000px;
+}
+.blackbox{
+    height:  100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+    display: none;
+}
+.modelbox{
+    height: 500px;
+    width: 800px;
+    background: red;
+    position: fixed;
+    left: 50%;
+    margin-left:-400px;
+    top: -500px;
+    z-index: 2;
+}
+
+</style>
+<script>
+    $("button").click(function(){
+        //$(".blackbox").show();
+        $(".blackbox").fadeIn(2000)
+        $(".modelbox").animate({"top": "100px" },2000)
+        
+    })
+</script>
